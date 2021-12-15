@@ -1,6 +1,6 @@
 defmodule Foo.Big do
   @money (for x <- 1..1_000_000, into: %{amount: 0, currency: :DOGE} do
-    {Enum.random(1_000_001..2_000_000), x}
+    {x, x + 1_000_00, }
   end)
 
   def reset_global_debt do
