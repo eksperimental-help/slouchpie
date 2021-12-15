@@ -1,7 +1,7 @@
 defmodule Foo.Small do
   @money (for x <- 1..1_000_000, into: %{amount: 0, currency: :DOGE} do
-    {x, x + 1_000_00, }
-  end)
+            {x, x + 1_000_00}
+          end)
 
   @amount @money.amount
   @currency @money.currency

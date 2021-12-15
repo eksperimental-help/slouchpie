@@ -9,7 +9,7 @@ defmodule Foo do
     for human <- Earth.list_humans() do
       update_financial_record_for_human(human, %{
         "total_amount" => unquote(@money.amount),
-        "base_currency" =>unquote(Map.get(@money, :currency))
+        "base_currency" => unquote(Map.get(@money, :currency))
       })
     end
   end
